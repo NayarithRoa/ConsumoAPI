@@ -48,7 +48,7 @@ public class NuevoUsuario extends AppCompatActivity {
     }
     private void CallRetrofit() {
 
-        Post postbody = new Post(1, txtnames.getText().toString(), txtusername.getText().toString(), txtrol.getText().toString(), txtcreated.getText().toString(), txtupdated.getText().toString());
+        Post postbody = new Post(5, txtnames.getText().toString(), txtusername.getText().toString(), txtrol.getText().toString(), txtcreated.getText().toString(), txtupdated.getText().toString());
 
         Call<Post> call = (new InfoServicio()).postInfoService();
         call.enqueue(new Callback<Post>() {

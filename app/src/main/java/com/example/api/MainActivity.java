@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
                     String contenido="";
 
                     for (int i=0;i<infoResponse.data.size();i++){
-                        contenido += "1: " + infoResponse.data.get(i).getNames()+" "+ "\n";
-                        contenido += "2: " + infoResponse.data.get(i).getUsername()+ "\n";
-                        contenido += "3: " + infoResponse.data.get(i).getRol()+ "\n";
-                        contenido += "2: " + infoResponse.data.get(i).getCreated_at()+ "\n";
-                        contenido += "3: " + infoResponse.data.get(i).getUpdated_at()+ "\n";
+                        contenido += "NOMBRE: " + infoResponse.data.get(i).getNames()+" "+ "\n";
+                        contenido += "USUARIO: " + infoResponse.data.get(i).getUsername()+ "\n";
+                        contenido += "ROL: " + infoResponse.data.get(i).getRol()+ "\n";
+                        contenido += "FECHA CREACIÓN: " + infoResponse.data.get(i).getCreated_at()+ "\n";
+                        contenido += "FECHA ACTUALIZACIÓN: " + infoResponse.data.get(i).getUpdated_at()+ "\n";
                         resultado.append(contenido);
-                        break;
+
                     }
                 }
 

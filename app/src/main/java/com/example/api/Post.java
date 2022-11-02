@@ -4,16 +4,15 @@ import com.google.gson.annotations.SerializedName;
 
 public class Post {
     private int id;
-    @SerializedName("names")
     private String names;
-    @SerializedName("username")
     private String username;
-    @SerializedName("rol")
     private String rol;
-    @SerializedName("created_at")
     private String created_at;
-    @SerializedName("updated_at")
     private String updated_at;
+
+   /* public  Post(){
+
+    }
 
     public Post(int id, String names, String username, String rol, String created_at, String updated_at) {
         this.id = id;
@@ -22,7 +21,7 @@ public class Post {
         this.rol = rol;
         this.created_at = created_at;
         this.updated_at = updated_at;
-    }
+    }*/
 
     public int getId() {
         return id;

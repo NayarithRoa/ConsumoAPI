@@ -12,6 +12,6 @@ public interface InfoEndPoints {
     Call<InfoResponse> getInfo();
 
     @POST("api/users")
-    Call<Post> postInfo();
+    Call<InfoResponseGet> postInfo();
 }
 

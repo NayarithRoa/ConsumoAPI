@@ -10,3 +10,5 @@ public class InfoResponse {
     @SerializedName("date") public Object date;
 
 }
+
+
